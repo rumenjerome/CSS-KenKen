@@ -5,3 +5,81 @@
 html {
   font-size: 10px;
 }
+
+body {
+  width: 100vw;  
+  min-height: 100vh;
+  margin: 0;
+  background-color: rgb(30, 125, 43);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: fit-content;
+  height: fit-content;
+  padding: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  width: 100vmin ;
+  max-width: 600px;
+  height: 100vmin;
+  max-height: 600px;
+  border: .5rem solid black;
+}
+
+.grid-items {
+  border: 1px solid gray;
+  font-size: 2rem;
+  background-color: white;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-items:hover {
+  background-color: brown;
+  color: orange;
+}
+
+#box3, #box7, #box10, #box11, #box12, #box15 {
+  border-left: 0.5rem solid black;
+}
+
+#box1, #box2, #box3, #box4, #box5, #box8, #box9, #box10, #box11 {
+  border-bottom: 0.5rem solid black;
+}
+
+.prompt {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  margin: .25rem;
+}
+
+.answer {
+  width: 50%;
+  height: 50%;
+  text-align: center;
+  border: none;
+  font-size: 2rem;
+  background-color: inherit;
+}
+
+.special {
+  border: none;
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 998px) {
+  html {
+    font-size: 18px;
+  }
+  
+}
